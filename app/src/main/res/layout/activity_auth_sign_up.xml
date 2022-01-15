@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.AuthSignUpActivity">
+
+    <ImageView
+        android:id="@+id/ivVerify"
+        android:layout_width="194dp"
+        android:layout_height="191dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/icauth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_verify"
+        android:layout_width="292dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="36dp"
+        android:text="Please Enter Verification Code"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivVerify" />
+
+    <EditText
+        android:id="@+id/verify1"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/smothblue"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_verify" />
+
+    <EditText
+        android:id="@+id/verify2"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/smothblue"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_verify"
+        app:layout_constraintStart_toEndOf="@+id/verify1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_verify"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <EditText
+        android:id="@+id/verify3"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/smothblue"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/verify2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_verify" />
+
+    <EditText
+        android:id="@+id/verify4"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/smothblue"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toEndOf="@+id/verify3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_verify" />
+
+    <Button
+        android:id="@+id/btn_verify"
+        android:layout_width="143dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="104dp"
+        android:text="verification"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_verify" />
+
+    <Button
+        android:id="@+id/btn_resend_code"
+        android:layout_width="143dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:text="RESEND CODE"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_verify"
+        app:layout_constraintVertical_bias="0.031" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

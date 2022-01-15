@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgbalance"
+    tools:context=".activity.ExchangeActivity">
+
+    <ImageView
+        android:id="@+id/iv_back_prof"
+        android:layout_width="38dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/icback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ic_exchange"
+        android:layout_width="182dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/icbtc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_your_currency"
+        android:layout_width="171dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:text="Bitcoin(BTC)"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ic_exchange" />
+
+    <TextView
+        android:id="@+id/tv_price_now"
+        android:layout_width="228dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="212dp"
+        android:text="Rp 684.402.616"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_your_currency"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="84dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/graphicprice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toEndOf="@+id/tv_price_now"
+        app:layout_constraintTop_toBottomOf="@+id/tv_your_currency" />
+
+    <TextView
+        android:id="@+id/tvbatas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_your_currency" />
+
+    <ImageView
+        android:id="@+id/graohic_currency"
+        android:layout_width="382dp"
+        android:layout_height="152dp"
+        android:src="@drawable/graphiccurrency"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvbatas" />
+
+    <ImageView
+        android:id="@+id/iv_shop_history"
+        android:layout_width="379dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/shophistory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graohic_currency" />
+
+    <Button
+        android:id="@+id/btnbuy"
+        android:layout_width="133dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/rounded_bg"
+        android:text="BUY"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_shop_history" />
+
+    <Button
+        android:id="@+id/btnsell"
+        android:layout_width="133dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/rounded_bg"
+        android:text="SELL"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnbuy"
+        app:layout_constraintTop_toBottomOf="@+id/iv_shop_history" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

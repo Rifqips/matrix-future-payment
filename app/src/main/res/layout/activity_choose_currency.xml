@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.ChooseCurrencyActivity">
+
+    <ImageView
+        android:id="@+id/iv_back_prof"
+        android:layout_width="38dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/icback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_choose_your"
+        android:layout_width="259dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="48dp"
+        android:text="Choose Your"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_currency"
+        android:layout_width="259dp"
+        android:layout_height="52dp"
+        android:text="Currency"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_choose_your" />
+
+    <SearchView
+        android:id="@+id/SvTransaction"
+        android:layout_width="376dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:searchHintIcon="@color/black"
+        android:background="@drawable/rounded_bg_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_currency" />
+
+    <ScrollView
+        android:layout_width="416dp"
+        android:layout_height="726dp"
+        app:layout_constraintTop_toBottomOf="@+id/SvTransaction"
+        android:layout_marginTop="40dp"
+        tools:ignore="MissingConstraints"
+        android:padding="0dp"
+        tools:layout_editor_absoluteX="-11dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="548dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/ivBg1"
+                    android:layout_width="382dp"
+                    android:layout_height="96dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bgchoosecurrency"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivicbtc1"
+                    android:layout_width="99dp"
+                    android:layout_height="111dp"
+                    android:layout_alignTop="@+id/ivBg1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="288dp"
+                    android:background="@drawable/icbtc"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivBg1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.019"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg1" />
+
+                <TextView
+                    android:id="@+id/tv_currency1"
+                    android:layout_width="187dp"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/ivBg1"
+                    android:layout_alignParentEnd="true"
+                    android:text="Bitcoin"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg1" />
+
+                <TextView
+                    android:id="@+id/tv_type_currency1"
+                    android:layout_width="187dp"
+                    android:layout_height="25dp"
+                    android:text="BTC 1,03"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.058"
+                    app:layout_constraintStart_toEndOf="@+id/ivicbtc1"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_currency1" />
+
+                <Button
+                    android:id="@+id/btn_add_currency"
+                    android:layout_width="70dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintVertical_bias="0.925"
+                    android:text="Add"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivBg1"
+                    app:layout_constraintEnd_toEndOf="@+id/ivBg1"
+                    app:layout_constraintStart_toEndOf="@+id/ivicbtc1"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg1"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--Batas 1-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/ivBg2"
+                    android:layout_width="382dp"
+                    android:layout_height="96dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bgchoosecurrency"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivicbtc2"
+                    android:layout_width="95dp"
+                    android:layout_height="104dp"
+                    android:layout_alignTop="@+id/ivBg2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="288dp"
+                    android:background="@drawable/iceth"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivBg2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.437"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg2"
+                    app:layout_constraintVertical_bias="0.8" />
+
+                <TextView
+                    android:id="@+id/tv_currency2"
+                    android:layout_width="187dp"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/ivBg2"
+                    android:layout_alignParentEnd="true"
+                    android:text="Ethereum"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg2" />
+
+                <TextView
+                    android:id="@+id/tv_type_currency2"
+                    android:layout_width="187dp"
+                    android:layout_height="25dp"
+                    android:text="ETH 2,011"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.036"
+                    app:layout_constraintStart_toEndOf="@+id/ivicbtc2"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_currency2" />
+
+                <Button
+                    android:id="@+id/btn_add_currency2"
+                    android:layout_width="70dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintVertical_bias="0.925"
+                    android:text="Add"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivBg2"
+                    app:layout_constraintEnd_toEndOf="@+id/ivBg2"
+                    app:layout_constraintStart_toEndOf="@+id/ivicbtc2"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg2"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--Batas 2-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/ivBg3"
+                    android:layout_width="382dp"
+                    android:layout_height="96dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bgchoosecurrency"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivicbtc3"
+                    android:layout_width="99dp"
+                    android:layout_height="111dp"
+                    android:layout_alignTop="@+id/ivBg3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="288dp"
+                    android:background="@drawable/icbnb"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivBg3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.019"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg3" />
+
+                <TextView
+                    android:id="@+id/tv_currency3"
+                    android:layout_width="187dp"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/ivBg3"
+                    android:layout_alignParentEnd="true"
+                    android:text="Binance"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg3" />
+
+                <TextView
+                    android:id="@+id/tv_type_currency3"
+                    android:layout_width="187dp"
+                    android:layout_height="25dp"
+                    android:text="BNB 0,503"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.058"
+                    app:layout_constraintStart_toEndOf="@+id/ivicbtc3"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_currency3" />
+
+                <Button
+                    android:id="@+id/btn_add_currency3"
+                    android:layout_width="70dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintVertical_bias="0.925"
+                    android:text="Add"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivBg3"
+                    app:layout_constraintEnd_toEndOf="@+id/ivBg3"
+                    app:layout_constraintStart_toEndOf="@+id/ivicbtc3"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg3" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--Batas 3-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/ivBg4"
+                    android:layout_width="382dp"
+                    android:layout_height="96dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bgchoosecurrency"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivicbtc4"
+                    android:layout_width="93dp"
+                    android:layout_height="102dp"
+                    android:layout_alignTop="@+id/ivBg4"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="288dp"
+                    android:background="@drawable/icltc"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivBg4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.019"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg4" />
+
+                <TextView
+                    android:id="@+id/tv_currency4"
+                    android:layout_width="187dp"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/ivBg4"
+                    android:layout_alignParentEnd="true"
+                    android:text="Litecoin"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg4" />
+
+                <TextView
+                    android:id="@+id/tv_type_currency4"
+                    android:layout_width="187dp"
+                    android:layout_height="25dp"
+                    android:text="LTC 0"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.103"
+                    app:layout_constraintStart_toEndOf="@+id/ivicbtc4"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_currency4" />
+
+                <Button
+                    android:id="@+id/btn_add_currency4"
+                    android:layout_width="70dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintVertical_bias="0.925"
+                    android:text="Add"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivBg4"
+                    app:layout_constraintEnd_toEndOf="@+id/ivBg4"
+                    app:layout_constraintStart_toEndOf="@+id/ivicbtc4"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg4" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--Batas 4-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/ivBg5"
+                    android:layout_width="382dp"
+                    android:layout_height="96dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bgchoosecurrency"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivicbtc5"
+                    android:layout_width="99dp"
+                    android:layout_height="111dp"
+                    android:layout_alignTop="@+id/ivBg5"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="288dp"
+                    android:background="@drawable/icshib"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivBg5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.019"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg5" />
+
+                <TextView
+                    android:id="@+id/tv_currency5"
+                    android:layout_width="187dp"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/ivBg5"
+                    android:layout_alignParentEnd="true"
+                    android:text="Shiba Inu"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg5" />
+
+                <TextView
+                    android:id="@+id/tv_type_currency5"
+                    android:layout_width="187dp"
+                    android:layout_height="25dp"
+                    android:text="SHIB 0"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.058"
+                    app:layout_constraintStart_toEndOf="@+id/ivicbtc5"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_currency5" />
+
+                <Button
+                    android:id="@+id/btn_add_currency5"
+                    android:layout_width="70dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintVertical_bias="0.925"
+                    android:text="Add"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivBg5"
+                    app:layout_constraintEnd_toEndOf="@+id/ivBg5"
+                    app:layout_constraintStart_toEndOf="@+id/ivicbtc5"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg5" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--Batas 5-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/ivBg6"
+                    android:layout_width="382dp"
+                    android:layout_height="96dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bgchoosecurrency"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivicbtc6"
+                    android:layout_width="96dp"
+                    android:layout_height="105dp"
+                    android:layout_alignTop="@+id/ivBg6"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="288dp"
+                    android:background="@drawable/icdgc"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivBg6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.019"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg6" />
+
+                <TextView
+                    android:id="@+id/tv_currency6"
+                    android:layout_width="187dp"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/ivBg6"
+                    android:layout_alignParentEnd="true"
+                    android:text="Dogecoin"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg6" />
+
+                <TextView
+                    android:id="@+id/tv_type_currency6"
+                    android:layout_width="187dp"
+                    android:layout_height="25dp"
+                    android:text="Doge 0"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.058"
+                    app:layout_constraintStart_toEndOf="@+id/ivicbtc6"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_currency6" />
+
+                <Button
+                    android:id="@+id/btn_add_currency6"
+                    android:layout_width="70dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintVertical_bias="0.925"
+                    android:text="Add"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivBg6"
+                    app:layout_constraintEnd_toEndOf="@+id/ivBg6"
+                    app:layout_constraintStart_toEndOf="@+id/ivicbtc6"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg6" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--Batas 6-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/ivBg7"
+                    android:layout_width="382dp"
+                    android:layout_height="96dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bgchoosecurrency"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivicbtc7"
+                    android:layout_width="99dp"
+                    android:layout_height="111dp"
+                    android:layout_alignTop="@+id/ivBg7"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="288dp"
+                    android:background="@drawable/icsol"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivBg7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.019"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg7" />
+
+                <TextView
+                    android:id="@+id/tv_currency7"
+                    android:layout_width="187dp"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/ivBg7"
+                    android:layout_alignParentEnd="true"
+                    android:text="Solana"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg7" />
+
+                <TextView
+                    android:id="@+id/tv_type_currency7"
+                    android:layout_width="187dp"
+                    android:layout_height="25dp"
+                    android:text="SOL 0"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.058"
+                    app:layout_constraintStart_toEndOf="@+id/ivicbtc7"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_currency7" />
+
+                <Button
+                    android:id="@+id/btn_add_currency7"
+                    android:layout_width="70dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintVertical_bias="0.925"
+                    android:text="Add"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivBg7"
+                    app:layout_constraintEnd_toEndOf="@+id/ivBg7"
+                    app:layout_constraintStart_toEndOf="@+id/ivicbtc7"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg7"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--Batas 7-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/ivBg8"
+                    android:layout_width="382dp"
+                    android:layout_height="96dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bgchoosecurrency"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivicbtc8"
+                    android:layout_width="99dp"
+                    android:layout_height="111dp"
+                    android:layout_alignTop="@+id/ivBg8"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="288dp"
+                    android:background="@drawable/icada"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivBg8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.019"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg8" />
+
+                <TextView
+                    android:id="@+id/tv_currency8"
+                    android:layout_width="187dp"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/ivBg8"
+                    android:layout_alignParentEnd="true"
+                    android:text="Cardano"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg8" />
+
+                <TextView
+                    android:id="@+id/tv_type_currency8"
+                    android:layout_width="187dp"
+                    android:layout_height="25dp"
+                    android:text="ADA 0"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.058"
+                    app:layout_constraintStart_toEndOf="@+id/ivicbtc8"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_currency8" />
+
+                <Button
+                    android:id="@+id/btn_add_currency8"
+                    android:layout_width="70dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintVertical_bias="0.925"
+                    android:text="Add"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivBg8"
+                    app:layout_constraintEnd_toEndOf="@+id/ivBg8"
+                    app:layout_constraintStart_toEndOf="@+id/ivicbtc8"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg8"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--Batas 8-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/ivBg9"
+                    android:layout_width="382dp"
+                    android:layout_height="96dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bgchoosecurrency"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivicbtc9"
+                    android:layout_width="99dp"
+                    android:layout_height="111dp"
+                    android:layout_alignTop="@+id/ivBg9"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="288dp"
+                    android:background="@drawable/ictrx"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivBg9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.019"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg9" />
+
+                <TextView
+                    android:id="@+id/tv_currency9"
+                    android:layout_width="187dp"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/ivBg9"
+                    android:layout_alignParentEnd="true"
+                    android:text="TRON"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg9" />
+
+                <TextView
+                    android:id="@+id/tv_type_currency9"
+                    android:layout_width="187dp"
+                    android:layout_height="25dp"
+                    android:text="TRX 0"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.058"
+                    app:layout_constraintStart_toEndOf="@+id/ivicbtc9"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_currency9" />
+
+                <Button
+                    android:id="@+id/btn_add_currency9"
+                    android:layout_width="70dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintVertical_bias="0.925"
+                    android:text="Add"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivBg9"
+                    app:layout_constraintEnd_toEndOf="@+id/ivBg9"
+                    app:layout_constraintStart_toEndOf="@+id/ivicbtc9"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg9"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--Batas 9-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/ivBg10"
+                    android:layout_width="382dp"
+                    android:layout_height="96dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bgchoosecurrency"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivicbtc10"
+                    android:layout_width="99dp"
+                    android:layout_height="111dp"
+                    android:layout_alignTop="@+id/ivBg10"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="288dp"
+                    android:background="@drawable/icavax"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivBg10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.019"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg10" />
+
+                <TextView
+                    android:id="@+id/tv_currency10"
+                    android:layout_width="187dp"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/ivBg10"
+                    android:layout_alignParentEnd="true"
+                    android:text="Avalanche"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg10" />
+
+                <TextView
+                    android:id="@+id/tv_type_currency10"
+                    android:layout_width="187dp"
+                    android:layout_height="25dp"
+                    android:text="AVAX 0"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.058"
+                    app:layout_constraintStart_toEndOf="@+id/ivicbtc10"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_currency10" />
+
+                <Button
+                    android:id="@+id/btn_add_currency10"
+                    android:layout_width="70dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintVertical_bias="0.925"
+                    android:text="Add"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivBg10"
+                    app:layout_constraintStart_toEndOf="@+id/ivicbtc10"
+                    app:layout_constraintTop_toTopOf="@+id/ivBg10"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--Batas 10-->
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

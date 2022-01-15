@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.TransactionHistoryActivity">
+
+    <ImageView
+        android:id="@+id/iv_back_prof"
+        android:layout_width="38dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/icback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_Transaction"
+        android:layout_width="259dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="48dp"
+        android:text="Transaction"
+        android:textColor="@color/smothblue"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_History"
+        android:layout_width="259dp"
+        android:layout_height="52dp"
+        android:text="History"
+        android:textColor="@color/smothblue"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Transaction" />
+
+    <SearchView
+        android:id="@+id/SvTransaction"
+        android:layout_width="376dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_bg_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_History" />
+
+    <TextView
+        android:id="@+id/tv_total_transaction"
+        android:layout_width="297dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="240 Transaction"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SvTransaction" />
+
+    <ImageView
+        android:id="@+id/ivBg1"
+        android:layout_width="382dp"
+        android:layout_height="96dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bghistory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total_transaction" />
+
+    <ImageView
+        android:id="@+id/ivBgdetils1"
+        android:layout_width="42dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/icdetils"
+        app:layout_constraintEnd_toEndOf="@+id/ivBg1"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toEndOf="@+id/buy1"
+        app:layout_constraintTop_toTopOf="@+id/ivBg1" />
+
+    <TextView
+        android:id="@+id/buy1"
+        android:layout_width="187dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Macbook Air M1 2020"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ivBg1"
+        app:layout_constraintTop_toTopOf="@+id/ivBg1" />
+
+    <TextView
+        android:id="@+id/buyDetils1"
+        android:layout_width="187dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:text="BTC 0.03  "
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBg1"
+        app:layout_constraintStart_toStartOf="@+id/ivBg1"
+        app:layout_constraintTop_toBottomOf="@+id/buy1"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <TextView
+        android:id="@+id/dateTransac1"
+        android:layout_width="80dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="192dp"
+        android:text="06/03/2021"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBg1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="@+id/ivBg1"
+        app:layout_constraintTop_toBottomOf="@+id/ivBgdetils1"
+        app:layout_constraintVertical_bias="0.714" />
+
+<!-- Batas 1-->
+
+    <ImageView
+        android:id="@+id/ivBg2"
+        android:layout_width="382dp"
+        android:layout_height="96dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bghistory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBg1" />
+
+    <ImageView
+        android:id="@+id/ivBgdetils2"
+        android:layout_width="42dp"
+        android:layout_height="26dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/icdetils"
+        app:layout_constraintEnd_toEndOf="@+id/ivBg1"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toEndOf="@+id/buy2"
+        app:layout_constraintTop_toTopOf="@+id/ivBg2" />
+
+    <TextView
+        android:id="@+id/buy2"
+        android:layout_width="217dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Alexander Crhisty AC-8541"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ivBg2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ivBg1"
+        app:layout_constraintTop_toTopOf="@+id/ivBg2" />
+
+    <TextView
+        android:id="@+id/buyDetils2"
+        android:layout_width="187dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:text="BTC 0.029  "
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBg2"
+        app:layout_constraintStart_toStartOf="@+id/ivBg1"
+        app:layout_constraintTop_toBottomOf="@+id/buy2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- Batas 2-->
+
+    <TextView
+        android:id="@+id/dateTransac2"
+        android:layout_width="80dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="192dp"
+        android:text="27/06/2021"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBg2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="@+id/ivBg1"
+        app:layout_constraintTop_toTopOf="@+id/ivBg2"
+        app:layout_constraintVertical_bias="0.84" />
+
+    <ImageView
+        android:id="@+id/ivBg3"
+        android:layout_width="382dp"
+        android:layout_height="96dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bghistory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBg2" />
+
+    <ImageView
+        android:id="@+id/ivBgdetils3"
+        android:layout_width="42dp"
+        android:layout_height="26dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/icdetils"
+        app:layout_constraintEnd_toEndOf="@+id/ivBg3"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toEndOf="@+id/buy3"
+        app:layout_constraintTop_toTopOf="@+id/ivBg3" />
+
+    <TextView
+        android:id="@+id/buy3"
+        android:layout_width="239dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="T-shirt Gucci (Metaverse Edition)"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ivBg2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ivBg1"
+        app:layout_constraintTop_toTopOf="@+id/ivBg3" />
+
+    <TextView
+        android:id="@+id/buyDetils3"
+        android:layout_width="193dp"
+        android:layout_height="34dp"
+        android:text="BTC 0.020  "
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBg3"
+        app:layout_constraintEnd_toEndOf="@+id/ivBg3"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="@+id/ivBg3"
+        app:layout_constraintTop_toBottomOf="@+id/buy3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/dateTransac3"
+        android:layout_width="80dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="192dp"
+        android:text="01/12/2021"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBg3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="@+id/ivBg1"
+        app:layout_constraintTop_toBottomOf="@+id/ivBgdetils3"
+        app:layout_constraintVertical_bias="0.657" />
+
+    <Button
+        android:id="@+id/btnClearHistory"
+        android:layout_width="237dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_bg"
+        android:text="Clear History"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBg3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

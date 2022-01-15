@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.ConfirmPaymentActivity">
+
+    <ImageView
+        android:id="@+id/iv_back_prof"
+        android:layout_width="38dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/icback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_coint"
+        android:layout_width="259dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="48dp"
+        android:text="Coin"
+        android:textColor="@color/smothblue"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_coin_transaction"
+        android:layout_width="259dp"
+        android:layout_height="52dp"
+        android:text="Transacton"
+        android:textColor="@color/smothblue"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_coint" />
+
+    <TextView
+        android:id="@+id/tv_price_payment_transaction"
+        android:layout_width="67dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="104dp"
+        android:text="PRICE"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_price_payment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_coin_transaction" />
+
+    <EditText
+        android:id="@+id/tv_price_payment"
+        android:layout_width="310dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/rounded_bg_login"
+        android:hint="56002936"
+        android:textColorHint="@color/grey"
+        android:padding="10dp"
+        android:paddingLeft="60dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.841"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_coin_transaction" />
+
+<!--batas 1-->
+
+    <TextView
+        android:id="@+id/tv_price_payment_transaction1"
+        android:layout_width="67dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="40dp"
+        android:text="COIN"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_price_payment1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price_payment_transaction" />
+
+    <EditText
+        android:id="@+id/tv_price_payment1"
+        android:layout_width="310dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_bg_login"
+        android:hint=""
+        android:padding="10dp"
+        android:paddingLeft="60dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.841"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price_payment" />
+
+    <TextView
+        android:id="@+id/tv_btc_payment"
+        android:layout_width="57dp"
+        android:layout_height="32dp"
+        android:text="BTC"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_price_payment1"
+        app:layout_constraintEnd_toEndOf="@+id/tv_price_payment1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price_payment"
+        app:layout_constraintVertical_bias="0.656" />
+<!--Batas 2-->
+
+    <TextView
+        android:id="@+id/tv_price_payment_transaction2"
+        android:layout_width="67dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="9dp"
+        android:text="TOTAL"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_price_payment2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price_payment_transaction1" />
+
+    <EditText
+        android:id="@+id/tv_price_payment2"
+        android:layout_width="310dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_bg_login"
+        android:hint=""
+        android:padding="10dp"
+        android:paddingLeft="60dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.841"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price_payment1" />
+
+    <TextView
+        android:id="@+id/tv_btc_payment2"
+        android:layout_width="57dp"
+        android:layout_height="32dp"
+        android:text="IDR"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_price_payment2"
+        app:layout_constraintEnd_toEndOf="@+id/tv_price_payment2"
+        app:layout_constraintTop_toTopOf="@+id/tv_price_payment2"
+        app:layout_constraintVertical_bias="0.434" />
+<!--Batas 3-->
+
+    <Button
+        android:id="@+id/btn_confirm_payment"
+        android:layout_width="133dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="184dp"
+        android:background="@drawable/rounded_bg"
+        android:text="CONFIRM"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price_payment2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_cancel_payment"
+        android:layout_width="133dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="184dp"
+        android:background="@drawable/rounded_bg"
+        android:text="CANCEL"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price_payment2"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

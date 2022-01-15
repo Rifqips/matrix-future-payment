@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgbalance"
+    tools:context=".activity.CurrencyBalanceActivity">
+
+    <ImageView
+        android:id="@+id/iv_back_prof"
+        android:layout_width="38dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/icback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageViewProfile"
+        android:layout_width="62dp"
+        android:layout_height="69dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/icpict"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toEndOf="@+id/iv_back_prof"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/tv_your_balance"
+        android:layout_width="172dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="68dp"
+        android:text="My Balance"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_your_bank"
+        android:layout_width="165dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="100dp"
+        android:text="BCA"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.219"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_your_saldo"
+        android:layout_width="266dp"
+        android:layout_height="39dp"
+        android:text="IDR 25.000.000"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_your_bank" />
+
+    <TextView
+        android:id="@+id/tv_depo_saldo_detil"
+        android:layout_width="266dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="12dp"
+        android:text="Last deposit: 02-12-2021"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.386"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_your_saldo" />
+
+    <TextView
+        android:id="@+id/tv_Transaction"
+        android:layout_width="248dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="280dp"
+        android:text="Transaction"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_History_balance"
+        android:layout_width="248dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="4dp"
+        android:text="History"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Transaction" />
+
+    <TextView
+        android:id="@+id/tv_see_more"
+        android:layout_width="93dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="244dp"
+        android:text="See more"
+        android:textColor="@color/grey"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_History_balance"
+        app:layout_constraintTop_toBottomOf="@+id/circleImageViewProfile" />
+<!--history 1-->
+
+    <ImageView
+        android:id="@+id/ivBg1"
+        android:layout_width="382dp"
+        android:layout_height="96dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bghistory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_History_balance" />
+
+    <ImageView
+        android:id="@+id/ivBgdetils1"
+        android:layout_width="42dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/icdetilshistory"
+        app:layout_constraintEnd_toEndOf="@+id/ivBg1"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toEndOf="@+id/buy1"
+        app:layout_constraintTop_toTopOf="@+id/ivBg1" />
+
+    <TextView
+        android:id="@+id/buy1"
+        android:layout_width="187dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="IDR 700.000.000"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ivBg1"
+        app:layout_constraintTop_toTopOf="@+id/ivBg1" />
+
+    <TextView
+        android:id="@+id/buyDetils1"
+        android:layout_width="187dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:text="BTC 1"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBg1"
+        app:layout_constraintStart_toStartOf="@+id/ivBg1"
+        app:layout_constraintTop_toBottomOf="@+id/buy1"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <TextView
+        android:id="@+id/dateTransac1"
+        android:layout_width="39dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="192dp"
+        android:text="Buy"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBg1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.825"
+        app:layout_constraintStart_toStartOf="@+id/ivBg1"
+        app:layout_constraintTop_toBottomOf="@+id/ivBgdetils1"
+        app:layout_constraintVertical_bias="0.722" />
+    <!--history 1-->
+
+    <ImageView
+        android:id="@+id/ivBg2"
+        android:layout_width="382dp"
+        android:layout_height="96dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bgsell"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBg1" />
+
+    <ImageView
+        android:id="@+id/ivBgdetils2"
+        android:layout_width="42dp"
+        android:layout_height="26dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/icdetilshistory"
+        app:layout_constraintEnd_toEndOf="@+id/ivBg1"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toEndOf="@+id/buy2"
+        app:layout_constraintTop_toTopOf="@+id/ivBg2" />
+
+    <TextView
+        android:id="@+id/buy2"
+        android:layout_width="187dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="IDR 350.000.000"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintStart_toStartOf="@+id/ivBg1"
+        app:layout_constraintTop_toTopOf="@+id/ivBg2" />
+
+    <TextView
+        android:id="@+id/buyDetils2"
+        android:layout_width="187dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:text="BTC 0,5"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBg2"
+        app:layout_constraintStart_toStartOf="@+id/ivBg2"
+        app:layout_constraintTop_toBottomOf="@+id/buy2"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <TextView
+        android:id="@+id/dateTransac2"
+        android:layout_width="39dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="192dp"
+        android:text="Sell"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBg2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.825"
+        app:layout_constraintStart_toStartOf="@+id/ivBg1"
+        app:layout_constraintTop_toBottomOf="@+id/ivBgdetils2"
+        app:layout_constraintVertical_bias="0.722" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

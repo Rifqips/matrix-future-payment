@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.SignUpActivity">
+
+    <TextView
+            android:id="@+id/tv_welcomeRegist"
+            android:layout_width="397dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="16dp"
+            android:text="Welcome, "
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_welcomeback1"
+        android:layout_width="398dp"
+        android:layout_height="30dp"
+        android:text="Register now to continue"
+        android:textColor="@color/grey"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcomeRegist" />
+
+    <ImageView
+        android:id="@+id/ivicsgup"
+        android:layout_width="234dp"
+        android:layout_height="271dp"
+        android:layout_marginTop="84dp"
+        android:src="@drawable/icsgup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_name_regist"
+        android:layout_width="62dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="48dp"
+        android:src="@drawable/ic_baseline_person_24"
+        app:layout_constraintBottom_toBottomOf="@+id/et_name_regist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_name_regist"
+        app:layout_constraintVertical_bias="0.578" />
+
+    <TextView
+        android:id="@+id/tv_your_email"
+        android:layout_width="179dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:text="Email Address"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name_regist" />
+
+    <TextView
+        android:id="@+id/tv_your_name"
+        android:layout_width="179dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="12dp"
+        android:text="Your Name"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivicsgup" />
+
+    <TextView
+        android:id="@+id/tv_your_password"
+        android:layout_width="179dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="12dp"
+        android:text="Password"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email_regist" />
+
+    <ImageView
+        android:id="@+id/iv_email_regist"
+        android:layout_width="62dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="48dp"
+        android:src="@drawable/ic_baseline_email_24"
+        app:layout_constraintBottom_toBottomOf="@+id/et_email_regist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_email_regist"
+        app:layout_constraintVertical_bias="0.526" />
+
+    <EditText
+        android:id="@+id/et_name_regist"
+        android:layout_width="312dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounded_bg_login"
+        android:hint="Enter Your Name"
+        android:paddingLeft="60dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_your_name" />
+
+    <EditText
+        android:id="@+id/et_password_regist"
+        android:layout_width="312dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounded_bg_login"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword"
+        android:paddingLeft="60dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_your_password" />
+
+    <EditText
+        android:id="@+id/et_email_regist"
+        android:layout_width="312dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounded_bg_login"
+        android:hint="Enter Your Email Address"
+        android:paddingLeft="60dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_your_email" />
+
+    <ImageView
+        android:id="@+id/iv_password_regist"
+        android:layout_width="62dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="48dp"
+        android:src="@drawable/ic_baseline_lock_24"
+        app:layout_constraintBottom_toBottomOf="@+id/et_password_regist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_password_regist"
+        app:layout_constraintVertical_bias="0.526" />
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="237dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_bg"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_password_regist" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

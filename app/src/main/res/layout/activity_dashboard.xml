@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgdashboard"
+    tools:context=".activity.DashboardActivity"
+    tools:layout_editor_absoluteX="2dp"
+    tools:layout_editor_absoluteY="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="53dp"
+        android:layout_height="62dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/icpict"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <ImageView
+        android:id="@+id/iv_ic_notif"
+        android:layout_width="49dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_baseline_notifications_24"
+        app:layout_constraintEnd_toStartOf="@+id/circleImageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvgreetingbig"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_ic_graphic"
+        android:layout_width="64dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/icgraphiccurrency"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toEndOf="@+id/tv_detils"
+        app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+
+    <ImageView
+        android:id="@+id/iv_ic_dash1"
+        android:layout_width="76dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="9dp"
+        android:src="@drawable/icdashboard1"
+        app:layout_constraintBottom_toTopOf="@+id/batas_dash1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/batas_dash"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/iv_ic_dash2"
+        android:layout_width="76dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="9dp"
+        android:src="@drawable/icdashboard2"
+        app:layout_constraintBottom_toTopOf="@+id/batas_dash1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.353"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/batas_dash"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/iv_ic_dash3"
+        android:layout_width="76dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="9dp"
+        android:src="@drawable/icdashboard3"
+        app:layout_constraintBottom_toTopOf="@+id/batas_dash1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/batas_dash"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/iv_ic_dash4"
+        android:layout_width="76dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="9dp"
+        android:src="@drawable/icdashboard4"
+        app:layout_constraintBottom_toTopOf="@+id/batas_dash1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/batas_dash"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvgreetingsmall"
+        android:layout_width="175dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:text="Good Morning"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvgreetingbig"
+        android:layout_width="187dp"
+        android:layout_height="29dp"
+        android:text="Carlos Haverts"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.229"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvgreetingsmall" />
+
+    <TextView
+        android:id="@+id/tv_default_your_bank"
+        android:layout_width="52dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="8dp"
+        android:text="BCA"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_default_first"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvgreetingbig"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_default_your_bank_saldo"
+        android:layout_width="96dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="44dp"
+        android:text="IDR 25.000.000"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.828"
+        app:layout_constraintStart_toEndOf="@+id/tv_default_your_bank"
+        app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+
+    <TextView
+        android:id="@+id/tv_default_first"
+        android:layout_width="100dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="60dp"
+        android:text="Bitcoin"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvgreetingbig" />
+
+    <TextView
+        android:id="@+id/tv_default_sechond"
+        android:layout_width="100dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="4dp"
+        android:text="BTC 5,11"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_default_first" />
+
+    <TextView
+        android:id="@+id/tv_detils"
+        android:layout_width="100dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="16dp"
+        android:text="Detils >"
+        android:textColor="@color/grey"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_default_sechond" />
+
+    <TextView
+        android:id="@+id/batas_dash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:text=""
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/batas_dash1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/batas_dash" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/batas_dash1">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="230dp"
+                android:layout_height="290dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/news1" />
+
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="230dp"
+                android:layout_height="290dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/news2" />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="230dp"
+                android:layout_height="290dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/news3" />
+
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="230dp"
+                android:layout_height="290dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/news4" />
+
+
+            <ImageView
+                android:id="@+id/image5"
+                android:layout_width="230dp"
+                android:layout_height="290dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/news5" />
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

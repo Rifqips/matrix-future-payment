@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.LoginActivity">
+
+    <TextView
+        android:id="@+id/tv_welcomeback"
+        android:layout_width="397dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/welcome_back"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_welcomeback1"
+        android:layout_width="398dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="0dp"
+        android:text="Log in now to continue"
+        android:textColor="@color/grey"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcomeback" />
+
+    <ImageView
+        android:id="@+id/iviclogo"
+        android:layout_width="234dp"
+        android:layout_height="271dp"
+        android:layout_marginTop="96dp"
+        android:src="@drawable/iclogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="179dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="24dp"
+        android:text="Email Address"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iviclogo" />
+
+    <EditText
+        android:id="@+id/et_email_login"
+        android:layout_width="312dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/rounded_bg_login"
+        android:hint="Enter Your Email Address"
+        android:paddingLeft="60dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iviclogo" />
+
+    <ImageView
+        android:layout_width="62dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:src="@drawable/ic_baseline_email_24"
+        app:layout_constraintBottom_toBottomOf="@+id/et_email_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_email_login"
+        app:layout_constraintVertical_bias="0.578" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="179dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Password"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email_login" />
+
+    <EditText
+        android:id="@+id/et_password_login"
+        android:layout_width="312dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounded_bg_login"
+        android:hint="Enter Your Email Password"
+        android:paddingLeft="60dp"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        app:passwordToggleEnabled="true"
+        android:textColorHint="@color/grey"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_password" />
+
+    <ImageView
+        android:layout_width="62dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:src="@drawable/ic_baseline_lock_24"
+        app:layout_constraintBottom_toBottomOf="@+id/et_password_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_password_login"
+        app:layout_constraintVertical_bias="0.368" />
+
+    <TextView
+        android:id="@+id/tv_forget_password"
+        android:layout_width="337dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:text="Forget Password ?"
+        android:textColor="@color/smothblue"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_password_login" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="237dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_bg"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_forget_password" />
+
+
+    <TextView
+        android:id="@+id/tvsignup"
+        android:layout_width="93dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:text="Sign Up."
+        android:textAlignment="center"
+        android:textColor="@color/smothblue"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnlogin"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
